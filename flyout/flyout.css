@@ -1,0 +1,19 @@
+* {padding:0; margin:0}
+/*.body {font:10px Verdana, Arial, Helvetica}*/
+#wrapper {width:750px; padding:25px; margin:0 auto}
+#leftcolumn {float:left; width:225px}
+#rightcolumn {float:left; width:525px}
+.dropdown {display:block; position:relative; font:10px Verdana, Arial, Helvetica}
+.dropdown dt {width:210px;  /*border:1px solid #9ac1c9; */padding:3px; font-weight:bold; cursor:pointer;border-bottom :1px solid #efefef; /* background:url(images/header.gif)*/}
+.dropdown .upperdd {/*border-bottom:none*/ border-bottom :1px solid #efefef;/*#9ac1c9;*/}
+.dropdown dt:hover {background:url(images/header_over.gif)}
+.dropdown dd {position:absolute; top:0; overflow:hidden; width:208px; display:none; background:#fefefe; opacity:0}
+.dropdown ul {width:204px; border:0.5px solid #efefef; list-style:none}
+.dropdown li {display:inline}
+.dropdown a,.dropdown a:active, .dropdown a:visited {display:block; padding:5px; color:#333; text-decoration:none; /*background:#eaf0f2;*/ width:180px;}
+ .dropdown a:hover {background:#d9e1e4; color:#000}
+.dropdown .underline {border-bottom:1px solid #efefef;}
+.dropdown h5{ padding: 4px;}
+
+	
+	

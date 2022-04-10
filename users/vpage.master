@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="vpage.master.cs" Inherits="users_vpage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="expires" content="-1"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <link href="../pagestyle.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" >
+    </asp:ContentPlaceHolder>
+</head>
+<body class="body">
+    <form id="form1" runat="server">
+    <div style =" margin-left :10%; margin-top :0px; height :640px; background:url(../images/glassb.png) repeat-x ; width :1000px" >
+<div class ="itop" >
+<div class ="holdlogo" >
+<img src="../images/logo.png" />
+</div>
+    </div> 
+    <div  class ="bcot ">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div> 
+    </form>
+</body>
+</html>

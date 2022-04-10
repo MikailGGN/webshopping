@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="users_user" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" lang ="en">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" >
+ 
+ <link href ="../mainstyle.css" rel="stylesheet" type="text/css" />
+ 
+
+    </asp:ContentPlaceHolder>
+</head>
+<body class ="bodi">
+    <form id="form1" runat="server">
+    <div class ="tree">
+    <div class="mastb2">
+    <div style ="height :60px; width :250px; margin-top :auto ;  padding-top :12px; padding-left :20px ">
+      <img src="../images/logo.png" />
+     </div>
+    <div style="padding-top :50px; margin-left :60%; margin-top :-60px;">
+   <!-- #include file="usermenu.aspx"--></div>
+    </div>
+    
+    <div class="west">
+    <div id ="lmenu" runat ="server"   >
+<!-- #include file="ymenu.aspx"-->
+</div> 
+    </div>
+    
+    <div class ="east">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </div>
+    </form>
+</body>
+</html>

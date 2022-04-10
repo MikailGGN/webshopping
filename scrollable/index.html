@@ -1,0 +1,38 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<head>  
+<title>Scrollable Image Demo Using jQuery Tools UI Library</title> 
+<script src="script/jquery.tools.min.js"></script> 
+<link rel="stylesheet" type="text/css" href="css/scrollable.css" /> 
+<link rel="stylesheet" type="text/css" href="css/buttons.css" /> 
+</head> 
+<body> 
+
+<h2>Scrollable Image Demo</h2>
+<a class="prevPage  left"></a> 
+<div class="scrollable">	
+	<div class="items"> 
+		<!-- 1-4--> 
+		<img src="http://localhost/tutorials/scrollable/images/img1.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img2.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img3.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img4.jpg" /> 
+		
+		<!-- 5-8 --> 
+		<img src="http://localhost/tutorials/scrollable/images/img5.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img6.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img7.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img8.jpg" /> 
+		
+		<!-- 9-12 --> 
+		<img src="http://localhost/tutorials/scrollable/images/img9.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img10.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img11.jpg" /> 
+		<img src="http://localhost/tutorials/scrollable/images/img12.jpg" /> 
+	</div> 
+</div> 
+<a class="nextPage right"></a> 
+
+<script> 
+	$(function()  { $("div.scrollable").scrollable({size: 4}); });
+</script> 
+</body> 

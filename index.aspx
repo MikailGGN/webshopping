@@ -1,0 +1,146 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="index.aspx.cs" Inherits="index" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    
+    <style type ="text/css" enableviewstate ="false"   >
+        
+     .txtfield {
+	border: 1px #9A9A9A solid;
+	width: 170px;
+	height: 16px;
+ margin-left :0px;
+}
+.pop{ display: block;
+	width: 10px;
+	height: 10px; float :left ;
+	cursor: pointer;
+           background: url(images/homemade.jpg) no-repeat; background-position :center ;  clear: none ;
+           }
+    </style>
+    <link href="pagestyle.css" rel="stylesheet" type="text/css" />
+    <link href="nocode.css" rel="stylesheet" type="text/css" />
+    <link href="flyout/flyout.css" rel="stylesheet" type="text/css" />
+    <script src="flyout/flyout.js" type="text/javascript"></script>
+</head>
+<body class="body">
+
+
+<div style ="margin-left :10%;">
+<div class ="itop" >
+<div class ="navi"><ul ><li><a href ="Default.htm" ><b >Home</b></a></li><li><b><a href ="about.htm"> About us </a></b></li><li><b><a href ="contact.htm"> Contact </a></b></li><li><b><a href ="#"> Selling  </a></b> </li></ul></div>
+</div>
+<div class ="homid">
+ <div style ="margin-top : 20px; margin-left:150px"> <img src ="images/e-shopping.png" alt="e-shop" /></div>
+ </div>
+<div class ="maincot">
+<div class ="mbg ">
+    <div>
+    <dl class="dropdown">
+   <dt ><h5> Categories</h5></dt>
+    
+    </dl>
+    <dl class="dropdown">
+    <dt id="one-ddheader" class="upperdd" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)"> Automotive and Industry</dt>
+    <dd id="one-ddcontent" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+      <ul>
+        <li><a href="#" class="underline">Navigation Item 1</a></li>
+        <li><a href="#" class="underline">Navigation Item 2</a></li>
+        <li><a href="#" class="underline">Navigation Item 3</a></li>
+        <li><a href="#">Navigation Item 3</a></li>
+      </ul>
+    </dd>
+  </dl>
+   <dl class="dropdown">
+    <dt id="Dt2" class="upperdd" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)"> Beauty</dt>
+    <dd id="Dd2" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+      <ul>
+        <li><a href="#" class="underline">Navigation Item 1</a></li>
+        <li><a href="#" class="underline">Navigation Item 2</a></li>
+        <li><a href="#" class="underline">Navigation Item 3</a></li>
+        <li><a href="#">Navigation Item 3</a></li>
+        <li><a href="#" class="underline">Navigation Item 4</a></li>
+      </ul>
+    </dd>
+  </dl>
+   <dl class="dropdown">
+    <dt id="Dt1" class="upperdd" onmouseover="ddMenu('one',1)" onmouseout="ddMenu('one',-1)"> Clothing</dt>
+    <dd id="Dd1" onmouseover="cancelHide('one')" onmouseout="ddMenu('one',-1)">
+      <ul>
+        <li><a href="#" class="underline">Navigation Item 1</a></li>
+        <li><a href="#" class="underline">Navigation Item 2</a></li>
+        <li><a href="#">Navigation Item 3</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="dropdown">
+    <dt id="two-ddheader" class="upperdd" onmouseover="ddMenu('two',1)" onmouseout="ddMenu('two',-1)">Jewelry</dt>
+    <dd id="two-ddcontent" onmouseover="cancelHide('two')" onmouseout="ddMenu('two',-1)">
+      <ul>
+        <li><a href="#" class="underline">Navigation Item 1</a></li>
+        <li><a href="#" class="underline">Navigation Item 2</a></li>
+        <li><a href="#" class="underline">Navigation Item 3</a></li>
+        <li><a href="#" class="underline">Navigation Item 4</a></li>
+        <li><a href="#">Navigation Item 5</a></li>
+      </ul>
+    </dd>
+  </dl>
+ 
+  <dl class="dropdown">
+    <dt id="four-ddheader" onmouseover="ddMenu('four',1)" onmouseout="ddMenu('four',-1)"> Furniture  and Decor </dt>
+    <dd id="four-ddcontent" onmouseover="cancelHide('four')" onmouseout="ddMenu('four',-1)">
+      <ul>
+        <li><a href="#" class="underline">Navigation Item 1</a></li>
+        <li><a href="#">Navigation Item 2</a></li>
+      </ul>
+    </dd>
+  </dl>
+    </div>
+</div>
+<div class ="mnbg">
+<br />
+
+&nbsp;&nbsp; Search :
+<select id="Select1" style ="width :180px">
+        
+        <option></option>
+    </select> <input id="Text1" type="text" style ="width : 320px" /><input id="Button1" type="button" value="button" /> <br />
+    <br />
+    
+<div class ="mnbg2 " >
+    <img height ="60px" width ="60px"  alt="" src="images/Animated-ShoppingCart.gif" style ="border :solid 1px #b9d6dc;"/>
+</div>
+<div class ="mnbg3 " >
+<img height ="60px" width ="60px"  alt="" src="" />
+</div>
+<div class ="mnbg4 " >
+<img height ="60px" width ="60px"  alt="" src="" />
+</div>
+
+<div class ="rt"> 
+
+<table  width ="200px" cellpadding ="0" cellspacing ="2px" >
+<tr><td class ="hd">
+    <img src="images/lock.gif"  height ="18px" width ="18px" />
+</td> </tr> 
+<tr><td>
+ <input id="Textuser" type="text" runat ="server"  class ="txtfield"  size="23" />
+</td></tr><tr><td>
+    <input id="Textpass" type="text" runat ="server"  class ="txtfield"  size="23" />
+  </td></tr>
+  <tr><td>
+      <input id="Button2" type="button" value="Login" /><input id="Button3" type="button" value="Forgot Password" /></td></tr> </table> <br />
+    <br />
+<a href ="#">Login</a> | <a href ="#">Register</a>
+<br />
+<a href ="#"> Compliant</a>
+
+
+</div>
+</div>
+</div></div>
+
+</body></html>

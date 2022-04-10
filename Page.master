@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Page.master.cs" Inherits="Page" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>nairatags.com| online shopping platform</title>
+    <meta name="description" content="Online Shopping Services.  
+      | Clothing, Electronics, Jewelry, Beauty, Books, computers, Automotive, Furniture," />
+<meta name="keywords" content="sell, online sales, purchase, online shopping, e-commerce in Nigeria
+      cheap rate, exchange, goods,for sale, 
+      request, buy online, trade, find, interswitch, 
+      low prices, premium service, quick Sales" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+ 
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="pagestyle.css" rel="stylesheet" type="text/css" />
+    <style type ="text/css" >
+        .hd
+{width:220px; background-image : url(images/signin.png); background-repeat :no-repeat ; height :30px;  }
+     .txtfield {
+	border: 1px #9A9A9A solid;
+	width: 150px;
+	height: 16px;
+ margin-left :0px;
+}
+.txtfield1{
+	border: 1px #9A9A9A solid;
+	width: 170px;
+	height: 20px;
+	}
+.pop{ display: block;
+	width: 10px;
+	height: 10px; float :left ;
+	cursor: pointer;
+           background: url(images/homemade.jpg) no-repeat; background-position :center ;  clear: none ;
+           }
+    </style>
+</head>
+<body class="body">
+    <form id="form1" runat="server">
+   <div style =" margin-left :10%; margin-top :0px; /*background:url(../images/glassb.png) repeat-x ;*/background-color :White ; width :1000px" >
+<div class ="itop" >
+<div class ="navi"><ul ><li><a href ="Default.aspx" >HOME</a></li><li><a href ="searchresult.aspx"> DEALS  </a> </li><li><a href ="selling.htm">SELL </a></li><li><a href ="storefinder.aspx"> STORE FINDER </a></li><li><a href="users/login.aspx">MY ACCOUNT </a></li></ul></div>
+<div class ="holdlogo" >
+<img src="images/logo.png" />
+</div>
+<div class ="sbox ">
+<dl style ="padding-top:10px; padding-left : 5px;margin-left :30px">
+<asp:DropDownList  id="Select1"  CssClass ="txtfield1" runat ="server"  >
+      </asp:DropDownList>  
+     <input id="Texts" type="text" style ="width : 300px; height :16px" runat ="server"  />&nbsp;<input id="Button1"  type="image"  src="images/search.png" onserverclick ="btn_search"  runat ="server" align="top" />&nbsp;<br /></dl></div>
+</div>
+ 
+    <div >
+    <div style="height :auto;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       </div> 
+   <div class ="bt">
+    <hr style ="padding-left :10px;font-size:0.2px; line-height :0.3px; height :0.3px ; color :#efefef; width :940px; padding-right :10px;" />
+
+<table  style =" margin-left :350px;">
+<tr><td>
+<ul style =" padding-top :10px;display :block">
+
+<li><a>Users&nbsp;Safety</a></li>
+<li><a href="users/accountinfo.aspx">Registrations</a></li>
+<li><a href ="terms.htm" >Terms</a></li>
+<li><a>Wish&nbsp;List</a></li>
+<li></li>
+</ul> </td><td >
+<ul style =" padding-top :10px;display :block">
+
+<li><a href ="searchresult.aspx" >Deal&nbsp;Finder</a></li>
+<li><a href ="storefinder.aspx">Store&nbsp;Finder</a></li>
+<li><a href ="sellerandcomments.aspx" >Blog</a></li>
+<li><a href ="contact.aspx" >Contact&nbsp;Us</a></li>
+<li></li>
+</ul>
+</td>
+<td>
+
+
+<dt >
+
+<a href ="#" style =" text-decoration :none; display: block  ;width: 5px;height: 18px;float:left; background-image : url(images/twitter.png); background-repeat :no-repeat ;  padding-left :10px;padding-top :5px;color :#058; padding-bottom :20px;"> </a>
+
+<a href ="#" style =" text-decoration :none; display: block  ;width: 5px;height: 18px;float:left ; background-image : url(images/facebook.png); background-repeat :no-repeat ;  padding-left :2px;padding-top :5px;color :#058; ">&nbsp;</a>
+</dt> 
+</td></tr>
+</table>
+<hr style ="padding-left :10px;font-size:0.2px; line-height :0.3px; height :0.3px ; color :#efefef; width :940px; padding-right :10px;" />
+&nbsp;&nbsp;&nbsp;&nbsp;&copy <script type="text/javascript">document.write((new Date()).getFullYear());</script> A3MG Enterprises
+</div>
+    </div>
+    </form>
+</body>
+</html>

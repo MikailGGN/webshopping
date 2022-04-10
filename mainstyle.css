@@ -1,0 +1,59 @@
+﻿.body{ margin : 0 0 0 0; background :#fbfbfa; filter = alpha(opacity=90); }
+
+.bodi { margin : 0 0 0 0; background :#fbfbfa; filter = alpha(opacity=80);/* background :transparent url(images/back.gif) repeat-x;*/
+}
+div.tree{ width : 1000px; height : auto ; margin-left :10%; background-color : White ; min-height :600px;  /* border : dotted 2px green; */}
+div.mastb1{ width :1000px; height : 80px; /*background :transparent url(images/hdr.png) repeat-x;*/ }
+div.mastb2{ width :1000px; height : 80px;/* background :transparent url(images/lift1.gif) repeat-x;*/ }
+
+div.banone{ width :200px; height :840px; /*border : solid 1px #999;*/}
+div.bantwo{ margin-top :-860px; margin-left :200px; width :800px; height:auto ; font : 11px Verdana, Arial, Helvetica; border :solid 2px #efefef; }
+
+div.bowl{width :1000px; height :840px;font : 11px Verdana, Arial, Helvetica; background-color :White ;  border : solid 0.5px #127;}
+
+div.west{width :180px; height :320px; background-color :White ;  margin-left:10px; margin-top :15px; }
+div.east{ margin-left :210px; margin-top :-320px; width :790px; height :auto;font : 12px lucida sans, Arial, Helvetica; background-color :White ;  border : solid 0.5px #127;}
+
+
+.oke { width :100%; height :160px;background : #fcfcfc;/* border : inset 1px #333;*/ filter= alpha(opacity=100);}
+.osi{  width  :580px; height :1250px; border :solid 1px #efefef; min-height :750px;}
+.otun{ width :200px; margin-left :590px; margin-top :-1251px;/* border-left : solid 1px #333;*/ height :850px;}
+.osii{  width  :100%; height :auto;/* border :solid 1px #999;*/ float : left ;}
+.osi3{  width  :580px; /*border :solid 1px #efefef;*/ min-height :650px;}
+.otun3{ width :200px; margin-left :590px; margin-top :-651px;/* border-left : solid 1px #333;*/ height :850px;}
+
+
+oke2 { width :100%; height :60px; background-color :Scrollbar ;}
+.osi2{ width :600px; min-height :650px; background-color :White ; border :solid 1px #efefef;}
+.otun2{ width :180px; margin-left :610px; margin-top :-851px; border-left : solid 1px #333; height :850px;}
+
+/*arrows*/
+.dhd{background:url(images/header_over.gif);}
+ .arr a{ border : none; outline-style :none ;}
+ div.nv{ font :8pt Tahoma #b9d6dc ;  margin-left :0px; background-color :#efefef; /*background :transparent url(images/banner.png) repeat-x;*/  height :28px; line-height :25px;}
+div.nv ul {width:99%; list-style: none; }
+div.nv li {display: inline; padding-right:30px;  height :10px;}
+ /* div form*/
+ .basket{ display: block  ;width: 18px;height: 18px;float: left ;background-image :url(images/cartt.gif); background-repeat :no-repeat ;text-decoration :none; padding-left :20px;padding-top :5px;}
+ div. forms
+ { width :80%; height :520px; margin-top :10%; margin-left :10%; background-color : #ccc;
+ 	}
+ 	.forms dt{ height: 200px; background-color :#efefef; }
+ 	
+ /*featured topics 1*/
+ 
+ .fblogs { }
+ .fblogs dl{ float :left ;}
+.fblogs dd{ background-color :#efefef; color :#9599ef; width :550px; margin-top :3px; margin-left :0px;}
+.fblogs dd small{ font-weight :bold ; color :#45557a ; }
+
+.relles{ width :200px;}
+div.unfil{ filter= alpha(opacity=100);}
+/*navi duplicate*/
+
+.navi ul {width:700px; list-style: none; margin-left :290px; margin-top :-55px; }
+.navi li {display: inline; padding-right:30px; padding-bottom :3px; height :10px;}
+.navi a{display: inline ; color:#000; text-decoration:none; width:50px ;font: bold 11px Arial; }
+.navi a:active, .navi a:visited {display: inline; padding:2px; color:#000; /*font-weight :bold ;*/ text-decoration:none;/* border :solid 1px #999;*/ width:60px}
+.navi a:hover {font :10px Tahoma #625e00; font-weight :bolder ;}
+	

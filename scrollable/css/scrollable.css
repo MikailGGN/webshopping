@@ -1,0 +1,35 @@
+.scrollable {
+	background: transparent; /*#ccc;*/
+	position: relative;
+	overflow: hidden;
+	width: 900px;
+	height:145px;
+	/*border:1px solid #ccc;*/
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+.scrollable .items {
+    width  : 20000em;
+	position: absolute;
+	clear: both;
+}
+
+.scrollable img {
+    opacity: 0.6;
+	float:left;
+	margin:15px 5px 15px 15px;
+	background-color:#fff;
+	cursor:pointer;
+	width:160px;
+	height:113px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+.scrollable .active {
+    opacity:1;
+	border:2px solid #000;
+	z-index:9999;
+	position:relative;
+}

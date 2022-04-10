@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <script type ="text/javascript" >
+    var ContentHeight = 0;
+var TimeToSlide = 200;
+var openAccordion = '';
+
+
+function runAccordion(index)
+{
+  var nID = "Accordion" + index + "Content";
+  if(openAccordion == nID)
+    nID = '';
+   
+  ContentHeight = document.getElementById("Accordion" + index + "Content"+"_").offsetHeight;
+  setTimeout("animate(" + new Date().getTime() + "," + TimeToSlide + ",'"
+      + openAccordion + "','" + nID + "')", 33);
+ 
+  openAccordion = nID;
+}
+
+function animate(lastTick, timeLeft, closingId, openingId)
+{  
+  var curTick = new Date().getTime();
+  var elapsedTicks = curTick - lastTick;
+ 
+  var opening = (openingId == '') ? null : document.getElementById(openingId);
+  var closing = (closingId == '') ? null : document.getElementById(closingId);
+ 
+
+  if(timeLeft <= elapsedTicks)
+  {
+    
+    if(opening != null)
+            opening.style.height = 'auto';
+
+   
+    if(closing != null)
+    {
+      //closing.style.display = 'none';
+      closing.style.height = '0px';
+    }
+    return;
+  }
+ 
+  timeLeft -= elapsedTicks;
+  var newClosedHeight = Math.round((timeLeft/TimeToSlide) * ContentHeight);
+
+  if(opening != null)
+  {
+    if(opening.style.display != 'block')
+      opening.style.display = 'block';
+    opening.style.height = (ContentHeight - newClosedHeight) + 'px';
+  }
+ 
+  if(closing != null)
+    closing.style.height = newClosedHeight + 'px';
+
+  setTimeout("animate(" + curTick + "," + timeLeft + ",'"
+      + closingId + "','" + openingId + "')", 33);
+}
+    </script>
+    
+</head>
+<body>
+<div >
+<div id="AccordionContainer" class="AccordionContainer">
+    <div onclick="runAccordion(1);">
+        <div class="AccordionTitle" onselectstart="return false;">
+            Accordion 1
+        </div>
+
+    </div>
+    <div id="Accordion1Content" class="AccordionContent">
+        <div id="Accordion1Content_" class="AccordionContent_">
+            <table class="ContentTable" cellspacing="2" cellpadding="2">
+                <tr>
+                    <td class="ContentCell">
+                        <a href='#'>Accordion 1</a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="ContentCell">
+                        <a href='#'>Accordion 2</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ContentCell">
+
+                        <a href='#'>Accordion 3</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div onclick="runAccordion(2);">
+        <div class="AccordionTitle" onselectstart="return false;">
+
+            Accordion 2
+        </div>
+    </div>
+    <div id="Accordion2Content" class="AccordionContent">
+        <div id="Accordion2Content_" class="AccordionContent_">
+            <a href='#'>Accordion 4</a>
+        </div>
+    </div>
+    <div onclick="runAccordion(3);">
+
+        <div class="AccordionTitle" onselectstart="return false;">
+            Accordion 3
+        </div>
+    </div>
+    <div id="Accordion3Content" class="AccordionContent">
+        <div id="Accordion3Content_" class="AccordionContent_">
+            <a href='#'>Accordion 5</a>
+        </div>
+    </div>
+
+    <div onclick="runAccordion(4);">
+        <div class="AccordionTitle" onselectstart="return false;">
+            Accordion 4
+        </div>
+    </div>
+    <div id="Accordion4Content" class="AccordionContent">
+        <div id="Accordion4Content_" class="AccordionContent_">
+            <a href='#'>Accordion 6</a>
+        </div>
+
+    </div>
+    <div onclick="runAccordion(5);">
+        <div class="AccordionTitle" onselectstart="return false;">
+            Accordion 5
+        </div>
+    </div>
+    <div id="Accordion5Content" class="AccordionContent">
+        <div id="Accordion5Content_" class="AccordionContent_">
+            <a href='#'>Accordion 7</a>
+
+        </div>
+    </div>
+    <div class="AccordionTitle" onselectstart="return false;">
+        <a href='http://google.com'>Accordion 6</a>
+    </div>
+</div>
+
+</div>
+</body>
+
+</html>

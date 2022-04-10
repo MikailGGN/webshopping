@@ -1,0 +1,38 @@
+﻿<%@ Page Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (IsPostBack) {
+
+            String aa = TextA.Value;
+            TextBox1.Text = aa;
+        }
+    }
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <script language ="javascript" src ="wysiwyg.js"  type ="text/javascript"  ></script> 
+    
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <textarea id="TextA" runat ="server"  style="height: 170px; width: 500px;"></textarea>
+        
+       
+        
+<script language="javascript1.2">
+
+  generate_wysiwyg('TextA');
+</script>
+<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><asp:Button ID="Button1"
+    runat="server" Text="Button" />
+    </div>
+    </form>
+</body>
+</html>
